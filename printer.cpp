@@ -4,11 +4,6 @@
 
 #include "printer.h"
 namespace Printer {
-/*    void printer::set_list(const std::map<std::string, float>& word) {
-        for (auto & it : word) {
-            words_list.emplace_back(it.second, it.first);
-        }
-    }*/
 
     void printer::print_stat() {
         words_list.sort();
@@ -20,9 +15,7 @@ namespace Printer {
         output_file.close();
     }
 
-/*    void printer::set_word_count(float word_count_) {
-        word_count = word_count_;
-    }*/
+
 
     printer::~printer() {
         words_list.clear();
@@ -42,12 +35,6 @@ namespace Printer {
         }
     }
 
-/*    void printer::set_output_file(const std::string& file_name) {
-        output_file.open(file_name);
-        if (!output_file){
-            std::cout << "input_file isn't open" << std::endl;
-            exit(1);
-        }
-    }*/
+
 
 }
